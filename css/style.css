@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "rubik";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url("fonts/rubik/rubik-400.woff2") format("woff2"),
+    url("fonts/rubik/rubik-400.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "rubik";
+  font-style: normal;
+  font-weight: 700;
+  src:
+    url("fonts/rubik/rubik-700.woff2") format("woff2"),
+    url("fonts/rubik/rubik-700.woff") format("woff");
+  font-display: swap;
+}
+
+/* Raleway */
+@font-face {
+  font-family: "raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "rubik";
+}

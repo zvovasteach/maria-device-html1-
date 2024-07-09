@@ -12,7 +12,7 @@
     <img class="logo" src="img/logo.svg" width="145" height="37" alt="Логотип интернет-магазина «Девайс»">
     <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
       <label for="search-field" class=“visually-hidden”>Форма поиска</label>
-      <input id="search-field" type="text" name="search" placeholder="Текст поиска">
+      <input class="search-input" id="search-field" type="text" name="search" placeholder="Текст поиска">
       <button class="button" type="submit">Найти</button>
     </form>
     <ul>
@@ -59,15 +59,15 @@
           <h3 class="devices-title">Порхает как бабочка, жалит как пчела!</h3>
           <p>Это обычный, на первый взгляд, квадракоптер оснащен мощным лазером, замаскированным под стандартную камеру.
           </p>
-          <a class="navigation-link" href="#">Подробее</a>
+          <a class="navigation-link-more" href="#">Подробнее</a>
           <dl>
             <div>
-              <dt>Длительность полета</dt>
-              <dd>800 м</dd>
+              <dt class="specific">Дальность полета</dt>
+              <dd class="parameter">800 м</dd>
             </div>
             <div>
-              <dt>Радиус поражения</dt>
-              <dd>50 м</dd>
+              <dt class="specific">Радиус поражения</dt>
+              <dd class="parameter">50 м</dd>
             </div>
           </dl>
         </li>
@@ -75,11 +75,11 @@
           <img class="slider-image" src="img/slider-2.png" width="560" height="560" alt="Фитнес-браслет">
           <h3 class="devices-title">Худеем правильно!</h3>
           <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-          <a class="navigation-link" href="#">Подробнее</a>
+          <a class="navigation-link-more" href="#">Подробнее</a>
           <dl>
             <div>
-              <dt>Без подзарядки</dt>
-              <dd>48 часов</dd>
+              <dt class="specific">Без подзарядки</dt>
+              <dd class="parameter">48 часов</dd>
             </div>
           </dl>
         </li>
@@ -87,19 +87,19 @@
           <img class="slider-image" src="img/slider-3.png" width="560" height="560" alt="Селфи-палка">
           <h3 class="devices-title">Делай селфи, как Бен Стиллер!</h3>
           <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-          <a class="navigation-link" href="#">Подробнее</a>
+          <a class="navigation-link-more" href="#">Подробнее</a>
           <dl>
             <div>
-              <dt>Длина палки</dt>
-              <dd>8,5 м</dd>
+              <dt class="specific">Длина палки</dt>
+              <dd class="parameter">8,5 м</dd>
             </div>
             <div>
-              <dt>Вес палки</dt>
-              <dd>5 кг</dd>
+              <dt class="specific">Вес палки</dt>
+              <dd class="parameter">5 кг</dd>
             </div>
             <div>
-              <dt>Материал</dt>
-              <dd>Карбон</dd>
+              <dt class="specific">Материал</dt>
+              <dd class="parameter">Карбон</dd>
             </div>
           </dl>
         </li>
@@ -184,20 +184,20 @@
         <li class="paragraph-list-name">СДИК</li>
         <li class="paragraph-list-name">ТоксБерри</li>
       </ul>
-      <a class="navigation-link" href="#">Подробнее о нас</a>
+      <a class="navigation-link-more" href="#">Подробнее о нас</a>
     </section>
 
     <section class="contacts">
       <h2 class="visually-hidden">Контакты компании</h2>
       <h3 class="about-title">Контакты</h3>
       <p class="about-description">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
-      <h3>Интернет магазин "Девайс"</h3>
+      <p class="title-contacts">Интернет магазин "Девайс"</p>
       <address>Санкт-Петербург, набережная реки Карповки 5, литера П.</address>
       <p><a class="phone" href="#">+7 (812) 812-12-12</a></p>
-      <p>Время работы</p>
+      <p class="title-contacts">Время работы</p>
       <p>пн-пт: с 10:00 до 22:00</p>
       <p>сб-вс: с 10:00 до 19:00</p>
-      <a class="navigation-link" href="#">Напишите нам</a>
+      <a class="navigation-link-more" href="#">Напишите нам</a>
     </section>
 
     <section class="subscribe">
@@ -206,7 +206,7 @@
         спецпредложения и вот это вот все.</p>
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
         <label for="subscribe-field" class=“visually-hidden”>Форма подписки</label>
-        <input id="subscribe-field" type="text" name="subscribe" placeholder="Ваш e-mail">
+        <input class="subscribe-input" id="subscribe-field" type="text" name="subscribe" placeholder="Ваш e-mail">
         <button class="button" type="submit">Подписаться</button>
       </form>
       <p>Это бесплатно</p>
@@ -217,9 +217,9 @@
     <a href="#"><img class="footer-logo" src="img/logo-yellow.svg" width="145" height="36" alt="Логотип интернет-магазина «Девайс»"></a>
     <address class="adress-footer">Санкт-Петербург, набережная реки Карповки 5, литера П.</address>
     <ul class="service-footer">
-      <li class="service-footer-item"><a href="#">Доставка</a></li>
-      <li class="service-footer-item"><a href="#">Гарантия</a></li>
-      <li class="service-footer-item"><a href="#">Контакты</a></li>
+      <li class="service-footer-item"><a class="service-footer-item" href="#">Доставка</a></li>
+      <li class="service-footer-item"><a class="service-footer-item" href="#">Гарантия</a></li>
+      <li class="service-footer-item"><a class="service-footer-item" href="#">Контакты</a></li>
     </ul>
     <a class="phone" href="+78128121212">+7 (812) 812-12-12</a>
     <ul class="social-media">

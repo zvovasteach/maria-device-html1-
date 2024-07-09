@@ -3,11 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>Моноподы Device</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
   <header class="page-header">
     <a class="navigation-logo" href="index.html">
-    <img class="logo" src="#" alt="Логотип интернет-магазина «Девайс»"></a>
+    <img class="logo" src="img/logo.svg" width="145" height="37" alt="Логотип интернет-магазина «Девайс»"></a>
     <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
       <label for="search-field" class=“visually-hidden”>Форма поиска</label>
       <input id="search-field" type="text" name="search" placeholder="Текст поиска">
@@ -18,7 +21,7 @@
         <a class="user-link" href="#">Коля Петухов</a>
       </li>
       <li class="link-item">
-        <a class="user-link" href="#">Выйти</a>
+        <a class="user-link-out" href="#">Выйти</a>
       </li>
       <li class="link-item">
         <a class="user-link" href="#">Сравнить</a>
@@ -63,7 +66,7 @@
 
   <section class="catalog-monopods">
       <h2 class="visually-hidden">Список моноподов для селфи с фильтрами</h2>
-  <p>Фильтр</p>
+  <span class="filter-sorting">Фильтр:</span>
   <form class="product-filter">
 <fieldset class="monopod-filter-group">
   <legend class="monopod-filter-title">Стоимость</legend>
@@ -73,8 +76,8 @@
   <button class="range-toggle toggle-max" type="button">
     <span class="visually-hidden">Изменить максимальную цену</span>
   </button>
-  <span>от 0</span>
-  <span>до 5000</span>
+  <span class="filter_number">от 0</span>
+  <span class="filter_number">до 5000</span>
 </fieldset>
 <fieldset class="monopod-filter-group">
   <legend class="monopod-filter-title">Цвет</legend>
@@ -135,7 +138,8 @@
     </li>
     </ul>
 </fieldset>
-<button class="button" type="submit">Показать</button>
+<button class="service-button" type="submit">Показать</button>
+<span class="filter-sorting">Сортировка:</span>
 </form>
 <form class="sorting-type">
   <label class="visually-hidden" for="sorting">Сортировка</label>
@@ -151,42 +155,42 @@
   <h2 class="visually-hidden">Список товаров</h2>
 <ul class="product-list">
   <li class="product-card">
-    <img class="product-card-image" src="" alt="">
-    <a class="product-card-link" href="#">Подробнее</a>
+    <img class="product-card-image" src="img/amateur-selfie-stick.jpg" width="360" height="380" alt="Любительская селфи-палка">
+    <a class="product-card-link" href="#"></a>
     <div>
       <a class="product-card-link" href="#">Любительская селфи-палка</a>
       <span class="product-card-price">500 ₽</span>
     </div>
 </li>
 <li class="product-card">
-  <img class="product-card-image" src="" alt="">
-  <a class="product-card-link" href="#">Подробнее</a>
+  <img class="product-card-image" src="img/professional-selfie-stick.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+  <a class="product-card-link" href="#"></a>
   <div>
     <a class="product-card-link" href="#">Профессиональная селфи-палка</a>
     <span class="product-card-price">1500 ₽</span>
   </div>
 </li>
 <li class="product-card">
-  <img class="product-card-image" src="" alt="">
-  <a class="product-card-link" href="#">Подробнее</a>
+  <img class="product-card-image" src="img/unsinkable-selfie-stick.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+  <a class="product-card-link" href="#"></a>
   <div>
     <a class="product-card-link" href="#">Непотопляемая селфи-палка</a>
     <span class="product-card-price">2500 ₽</span>
   </div>
 </li>
 <li class="product-card">
-  <img class="product-card-image" src="" alt="">
-  <a class="product-card-link" href="#">Подробнее</a>
+  <img class="product-card-image" src="img/follow-me-stick.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной">
+  <a class="product-card-link" href="#"></a>
   <div>
     <a class="product-card-link" href="#">Селфи-палка "Следуй за мной"</a>
     <span class="product-card-price">1500 ₽</span>
   </div>
 </li>
 </ul>
-<button class="button" type="button">Загрузить еще</button>
+<button class="download-more-button" type="button">Загрузить еще</button>
 <ul class="pagination">
   <li class="pagination-item">
-      <a class="button pagination-back" href="#">Назад</a>
+      <a class="button-pagination-back" href="#">Назад</a>
       <li class="pagination-item">
         <a class="pagination-link pagination-current">1</a>
       </li>
@@ -203,19 +207,19 @@
         <a class="pagination-link" href="#">15</a>
       </li>
       <li class="pagination-item">
-        <a class="button pagination-back" href="#">Вперед</a>
+        <a class="button-pagination-back" href="#">Вперед</a>
       </li>
     </ul>
 </section>
   </main>
 
   <footer class="page-footer">
-    <a href="#"><img class="footer-logo" src="" alt="Логотип интернет-магазина «Девайс»"></a>
+    <a href="#"><img class="footer-logo" src="img/logo-yellow.svg" width="145" height="36" alt="Логотип интернет-магазина «Девайс»"></a>
     <address class="adress-footer">Санкт-Петербург, набережная реки Карповки 5, литера П.</address>
     <ul class="service-footer">
-      <li class="service-footer-item"><a href="#">Доставка</a></li>
-      <li class="service-footer-item"><a href="#">Гарантия</a></li>
-      <li class="service-footer-item"><a href="#">Контакты</a></li>
+      <li class="service-footer-item"><a class="service-footer-item" href="#">Доставка</a></li>
+      <li class="service-footer-item"><a class="service-footer-item" href="#">Гарантия</a></li>
+      <li class="service-footer-item"><a class="service-footer-item" href="#">Контакты</a></li>
     </ul>
     <a class="phone" href="+78128121212">+7 (812) 812-12-12</a>
     <ul class="social-media">
@@ -235,7 +239,7 @@
         </a>
       </li>
     </ul>
-    <a href="http://htmlacademy.ru/"><img class="footer-htmlacademy-logo" alt="Логотип html академии"></a>
+    <a href="http://htmlacademy.ru/"><img class="footer-htmlacademy-logo" src="img/html-academy-logo.svg" width="115" height="33" alt="Логотип html академии"></a>
   </footer>
 </body>
 </html>

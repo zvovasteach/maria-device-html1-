@@ -81,27 +81,37 @@
               </p>
            <div class="container-slider-more">
               <a class="more-info-link" href="#">Подробнее</a>
-              <ol class="slider-button">
-                <li class="slider-button-item">
+              <ul class="devices-buttons">
+                <li>
+                  <button class="slider-button-current " type="button">
+                    <span class="visually-hidden">1 девайс</span>
+                  </button>
                 </li>
-                <li class="slider-button-item">
+                <li>
+                  <button class="slider-button-current " type="button">
+                    <span class="visually-hidden visually-hidden">2 девайс</span>
+                  </button>
                 </li>
-                <li class="slider-button-item">
+                <li>
+                  <button class="slider-button-current " type="button">
+                    <span class="visually-hidden">3 девайс</span>
+                  </button>
                 </li>
-              </ol>
+              </ul>
             </div>
               <dl class="container-specific">
-                <div>
+                <div class="specific-item">
                   <dt class="specific">Дальность полета</dt>
                   <dd class="parameter">800 м</dd>
                 </div>
-                <div>
+                <div class="specific-item">
                   <dt class="specific">Радиус поражения</dt>
                   <dd class="parameter">50 м</dd>
                 </div>
               </dl>
             </div>
           </li>
+          <span class="counter visually-hidden">02</span>
         <li class="slider-item">
           <img class="slider-image" src="img/slider-2.png" width="560" height="560" alt="Фитнес-браслет">
           <div class="slider-text">
@@ -109,13 +119,14 @@
           <p class="devices-paragraph">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
           <a class="more-info-link" href="#">Подробнее</a>
           <dl class="container-specific">
-            <div>
+            <div class="specific-item">
               <dt class="specific">Без подзарядки</dt>
               <dd class="parameter">48 часов</dd>
             </div>
           </dl>
         </div>
         </li>
+        <span class="counter visually-hidden">03</span>
         <li class="slider-item">
           <img class="slider-image" src="img/slider-3.png" width="560" height="560" alt="Селфи-палка">
           <div class="slider-text">
@@ -123,15 +134,15 @@
           <p class="devices-paragraph">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
           <a class="more-info-link" href="catalog.html">Подробнее</a>
           <dl class="container-specific">
-            <div>
+            <div class="specific-item">
               <dt class="specific">Длина палки</dt>
               <dd class="parameter">8,5 м</dd>
             </div>
-            <div>
+            <div class="specific-item">
               <dt class="specific">Вес палки</dt>
               <dd class="parameter">5 кг</dd>
             </div>
-            <div>
+            <div class="specific-item">
               <dt class="specific">Материал</dt>
               <dd class="parameter">Карбон</dd>
             </div>
@@ -139,23 +150,18 @@
           </div>
         </li>
       </ol>
-
-      <button class="slider-button-current" type="button">
-        <span class="visually-hidden">1 девайс</span>
-      </button>
-      <button class="slider-button-current" type="button">
-        <span class="visually-hidden">2 девайс</span>
-      </button>
-      <button class="slider-button-current" type="button">
-        <span class="visually-hidden">3 девайс</span>
-      </button>
-      <button class="slider-button slider-prev" type="button">
-        <span class="visually-hidden">Предыдущее фото</span>
-      </button>
-      <button class="slider-button slider-next" type="button">
-        <span class="visually-hidden">Следующее фото</span>
-      </button>
-      </section>
+        <ul class="slider-buttons">
+        <li>
+          <button class="slider-button slider-prev" type="button">
+            <span class="visually-hidden">Предыдущее фото</span>
+          </button>
+        </li>
+        <li>
+          <button class="slider-button slider-next" type="button">
+            <span class="visually-hidden">Следующее фото</span>
+          </button>
+        </li>
+      </ul>
 
       <section class="products">
         <h2 class="visually-hidden">Категории товаров</h2>

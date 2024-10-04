@@ -82,14 +82,12 @@
         </li>
       </ul>
     </header>
-
 <!-- beginning of container -->
-<div class="products-pagination-download-container container">
+  <div class="products-container-main">
   <div class="products-container-inner ">
   <!-- 1 block -->
         <div class="filter-container-info">
           <span class="filter-sorting">Фильтр:</span>
-
           <span class="filter-sorting">Сортировка:</span>
           </form>
           <form class="sorting-type">
@@ -106,13 +104,12 @@
         <div class="filter-products-container">
   <!-- 2 block ФИЛЬТР  -->
   <div class="filter-container">
-    <section class="catalog-monopods">
+    <section class="catalog-products">
       <h2 class="visually-hidden">Список моноподов для селфи с фильтрами</h2>
       <form class="product-filter">
-        <hr class="line">
         <!-- Фильтр по стоимости -->
-        <fieldset class="monopod-filter-group">
-          <legend class="monopod-filter-title">Стоимость</legend>
+        <fieldset class="product-filter-group">
+          <legend class="product-filter-title">Стоимость</legend>
           <button class="range-toggle toggle-min" type="button">
             <span class="visually-hidden">Изменить минимальную цену</span>
           </button>
@@ -123,9 +120,8 @@
           <span class="filter_number">до 5000</span>
         </fieldset>
         <!-- Фильтр по цвету -->
-        <hr class="line">
-        <fieldset class="monopod-filter-group">
-          <legend class="monopod-filter-title">Цвет</legend>
+        <fieldset class="product-filter-group">
+          <legend class="product-filter-title">Цвет</legend>
           <ul class="color-filter-list">
             <li class="color-filter-item">
               <label class="control">
@@ -165,9 +161,8 @@
           </ul>
         </fieldset>
         <!-- Фильтр по Bluetooth -->
-        <hr class="line">
-        <fieldset class="monopod-filter-group">
-          <legend class="monopod-filter-title">Bluetooth</legend>
+        <fieldset class="product-filter-group">
+          <legend class="product-filter-title">Bluetooth</legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
@@ -191,7 +186,7 @@
   </div>
   <!-- end 2 block -->
   <!-- 3 block -->
-<div class="products-wrap container">
+<div class="products-wrap">
     <section class="products">
       <h2 class="visually-hidden">Список товаров</h2>
       <ul class="product-list">
@@ -230,35 +225,34 @@
   <!-- end of 3 block -->
    </ul>
     </section>
-<div class="download-pagination-wrap">
   <button class="download-more-button" type="button">Загрузить еще</button>
   <ul class="pagination">
     <li class="pagination-item">
       <a class="button-pagination-back" href="#">Назад</a>
     </li>
-<div class="pagination-controls">
     <li class="pagination-item">
-      <a class="pagination-link pagination-current">1</a>
+      <ul class="pagination-controls">
+        <li class="pagination-item">
+          <a class="pagination-link pagination-current">1</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">2</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">3</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">...</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">15</a>
+        </li>
+      </ul>
     </li>
-    <li class="pagination-item">
-      <a class="pagination-link" href="#">2</a>
-    </li>
-    <li class="pagination-item">
-      <a class="pagination-link" href="#">3</a>
-    </li>
-    <li class="pagination-item">
-      <a class="pagination-link" href="#">...</a>
-    </li>
-    <li class="pagination-item">
-      <a class="pagination-link" href="#">15</a>
-    </li>
-  </div>
     <li class="pagination-item">
       <a class="button-pagination-back" href="#">Вперёд</a>
     </li>
   </ul>
-</div>
-  </section>
 </div>
    <!-- end of 3 block -->
         </div>

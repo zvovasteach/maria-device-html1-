@@ -71,9 +71,11 @@
     <div class="container container-devices">
       <section class="devices">
         <h2 class="visually-hidden">Популярные девайсы</h2>
-        <ol>
-          <span class="counter">01</span>
+        <ol class="slider-item-list">
           <li class="slider-item slider-item-active">
+            <div class="counter-wrapper">
+              <span class="counter">01</span>
+            </div>
             <img class="slider-image" src="img/slider-1.png" width="560" height="560" alt="Квадрокоптер">
             <div class="slider-text">
               <h3 class="devices-title">Порхает как бабочка, жалит как пчела!</h3>
@@ -81,23 +83,6 @@
               </p>
            <div class="container-slider-more">
               <a class="more-info-link" href="#">Подробнее</a>
-              <ul class="devices-buttons">
-                <li>
-                  <button class="slider-button-current " type="button">
-                    <span class="visually-hidden">1 девайс</span>
-                  </button>
-                </li>
-                <li>
-                  <button class="slider-button-current " type="button">
-                    <span class="visually-hidden visually-hidden">2 девайс</span>
-                  </button>
-                </li>
-                <li>
-                  <button class="slider-button-current " type="button">
-                    <span class="visually-hidden">3 девайс</span>
-                  </button>
-                </li>
-              </ul>
             </div>
               <dl class="container-specific">
                 <div class="specific-item">
@@ -111,8 +96,10 @@
               </dl>
             </div>
           </li>
-          <span class="counter visually-hidden">02</span>
         <li class="slider-item">
+          <div class="counter-wrapper">
+            <span class="counter">02</span>
+          </div>
           <img class="slider-image" src="img/slider-2.png" width="560" height="560" alt="Фитнес-браслет">
           <div class="slider-text">
             <h3 class="devices-title">Худеем правильно!</h3>
@@ -126,8 +113,10 @@
           </dl>
         </div>
         </li>
-        <span class="counter visually-hidden">03</span>
         <li class="slider-item">
+          <div class="counter-wrapper">
+            <span class="counter">03</span>
+          </div>
           <img class="slider-image" src="img/slider-3.png" width="560" height="560" alt="Селфи-палка">
           <div class="slider-text">
             <h3 class="devices-title">Делай селфи, как Бен Стиллер!</h3>
@@ -150,6 +139,23 @@
           </div>
         </li>
       </ol>
+      <ul class="devices-buttons">
+        <li>
+          <button class="slider-button-current " type="button">
+            <span class="visually-hidden">1 девайс</span>
+          </button>
+        </li>
+        <li>
+          <button class="slider-button-current " type="button">
+            <span class="visually-hidden visually-hidden">2 девайс</span>
+          </button>
+        </li>
+        <li>
+          <button class="slider-button-current " type="button">
+            <span class="visually-hidden">3 девайс</span>
+          </button>
+        </li>
+      </ul>
         <ul class="slider-buttons">
         <li>
           <button class="slider-button slider-prev" type="button">
@@ -235,7 +241,7 @@
       <a class="more-info-link" href="#">Подробнее о нас</a>
     </section>
 
-    <section class="contacts ">
+    <section class="contacts">
       <h2 class="visually-hidden">Контакты компании</h2>
       <h3 class="about-title">Контакты</h3>
       <p class="about-description">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
@@ -253,7 +259,6 @@
 
     <section class="subscribe">
       <div class="subscribe-container container">
-
         <div class="just-subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-desctiption">Еженедевный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции,
@@ -275,7 +280,6 @@
   <footer class="page-footer">
     <div class="footer-container container">
       <a href="#"><img class="footer-logo" src="img/logo-yellow.svg" width="145" height="36" alt="Логотип интернет-магазина «Девайс»"></a>
-
       <div class="service-footer-container">
         <address class="address-footer">Санкт-Петербург, набережная реки Карповки 5, литера П.</address>
         <ul class="service-footer">

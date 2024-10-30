@@ -87,6 +87,7 @@ body {
   padding-left: 60px;
   padding-right: 60px;
   margin-top: 40px;
+  position: relative;
   z-index: 0;
 }
 
@@ -232,7 +233,7 @@ body {
 }
 
 .slider-image {
-  margin-top: -170px;
+  margin-top: -150px;
   margin-left: 0;
   padding-left: 0;
 }
@@ -777,13 +778,18 @@ body {
   color: #000000;
 }
 
-.products-container-main {
+.products-main {
   background-color: #F0F0F0;
   width: 100%;
   margin-top: 35px;
 }
 
 .products-container-inner {
+  display: grid;
+  grid-template-columns: 320px 840px;
+  grid-template-areas:
+    "filter sorting"
+    "filter products";
   width: 1160px;
   margin: auto;
 }
@@ -794,7 +800,6 @@ body {
 
 .product-filter {
   padding: 0;
-  padding-top: 80px;
   margin: 0;
   border: 0;
   width: 80%;
@@ -808,13 +813,20 @@ body {
 .filter-container {
   margin-right: 0;
   padding: 0;
-  margin-top: -60px;
+  grid-column: 1 / 2;
   margin-left: 60px;
+  grid-area: filter;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
 }
-.filter-products-container .filter-sorting {
-  position: absolute;
-  top: -56px;
-  left: 60px;
+
+.sorting-container-info .filter-sorting {
+margin-left: 40px;
+}
+
+.filter-container .filter-sorting {
+  margin-bottom: 60px;
 }
 
 .product-filter-title {
@@ -830,21 +842,25 @@ body {
   margin: 0;
   margin-top: 12px;
   margin-bottom: 0;
-  border: 0;
   margin-right: 0;
   box-sizing: border-box;
-  position: relative;
 }
 
-.product-filter-group::before {
-  content: "";
-  position: absolute;
-  top: -40px;
-  left: 0;
-  width: 200px;
-  height: 2px;
-  background-color: black;
+fieldset {
+  border: none;
+  border-top: 2px solid #000;
+  padding-top: 10px;
 }
+
+/*.product-filter-group::before {*/
+/*  content: "";*/
+/*  position: absolute;*/
+/*  top: -40px;*/
+/*  left: 0;*/
+/*  width: 200px;*/
+/*  height: 2px;*/
+/*  background-color: black;*/
+/*}*/
 
 .color-filter-item {
   margin: 0;
@@ -857,7 +873,9 @@ body {
   padding-bottom: 25px;
   display: flex;
   gap: 200px;
-  padding-left: 360px;
+  width: 840px;
+  margin-left: auto;
+  grid-area: sorting; /* располагается в верхней части второго столбца */
 }
 
 .color-filter-list {
@@ -892,9 +910,8 @@ body {
   font-size: 18px;
 }
 
-.filter-products-container {
+.filter-products-section {
   display: flex;
-  gap: 70px;
   padding: 0;
   position: relative;
 }
@@ -961,6 +978,7 @@ body {
   padding-right: 40px;
   padding-top: 70px;
   padding-bottom: 70px;
+  grid-column: 2 / 3;
 }
 
 .pagination {

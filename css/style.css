@@ -85,7 +85,7 @@ body {
   padding-top: 0;
   padding-left: 60px;
   padding-right: 60px;
-  margin-top: 34px;
+  margin-top: 39px;
   position: relative;
   z-index: 0;
 }
@@ -266,8 +266,48 @@ a.user-link:focus-visible {
   outline: none;
 }
 
+.user-link-login {
+  background-image: url('../img/person-icon.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 15px 13px;
+  padding-left: 24px;
+}
+
+.user-link-login:hover {
+  opacity: 0.6;
+}
+
+.user-link-login:active {
+  opacity: 0.3;
+}
+
 .user-link-compare {
-  margin-right: 63px;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+  background-image: url('../img/compare-icon.svg');
+  background-position: left center;
+  background-size: 10px 13px;
+  padding-left: 24px
+}
+
+.user-link-basket {
+  background-image: url('../img/bin.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 31px 22px;
+  padding-left: 42px;
+  position: relative;
+  z-index: 0;
+}
+
+.basket-count {
+  position: absolute;
+  top: -3px;
+  left: 7px;
+  font-weight: 400;
+  font-size: 14px;
+  z-index: 1;
 }
 
 .navigation-user {
@@ -313,6 +353,13 @@ a.user-link:focus-visible {
   letter-spacing: 0.2em;
   color: #000000;
   position: relative;
+  background-image: url("../img/plus.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 50px 51px;
+  padding-right: 66px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .navigation-link-1:focus-visible {
@@ -440,7 +487,6 @@ a.user-link:focus-visible {
   display: inline-block;
   letter-spacing: 0.2em;
   z-index: 1;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .more-info-link-2 {
@@ -643,7 +689,6 @@ a.user-link:focus-visible {
   font-size: 16px;
   text-align: left;
   margin-bottom: 0;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .parameter {
@@ -654,7 +699,6 @@ a.user-link:focus-visible {
   margin-top: 4px;
   margin-bottom: 0;
   margin-left: 0;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .products-list {
@@ -1023,7 +1067,7 @@ a.user-link:focus-visible {
 
 .icon-i-dot,
 .icon-i-stem {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
 .rare-service-container {
